@@ -26,8 +26,9 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 ## Server
-```
-  import socket
+  
+  ```
+import socket
   s=socket.socket()
   s.connect(('localhost',8000))
   while True:
@@ -37,7 +38,8 @@ This commands includes
 ```
 ## Client
 
-  import socket
+  ```
+import socket
   from pythonping import ping
   
   s=socket.socket()
@@ -52,7 +54,7 @@ This commands includes
           c.send(str(ping(hostname, verbose=False)).encode())
       except KeyError:
           c.send("Not Found".encode())
-
+```
 ## Output
 <img width="1013" height="459" alt="Screenshot 2026-05-20 085335" src="https://github.com/user-attachments/assets/896dc736-ece7-40cc-84a1-fc39b177081d" />
 
